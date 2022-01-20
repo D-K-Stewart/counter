@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <title>Counter</title>
+</head>
+<body>
+    <h1>Counter</h1>
+    <main>
+        
+        <span id="display">{{click}}</span>
+        <div id="buttons">
+            <form action="/reset">
+            <button id="reset" type="click" name="" value="reset">Reset</button>
+            </form>
+    </main>
+
+            <!-- <button id="add">Click</button> -->
+            
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
